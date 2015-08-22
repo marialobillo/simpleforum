@@ -1,1 +1,7 @@
-%h1 This is the index 
+- @posts.each do |post|
+  %h2= post.title
+  %p
+    Publish at
+    = time_ago_in_words(post.created_at)
+
+= link_to 'New Post', new_post_path
