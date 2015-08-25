@@ -1,7 +1,9 @@
-- @posts.each do |post|
-  %h2= link_to post.title, post
-  %p
-    Publish at
-    = time_ago_in_words(post.created_at)
-    by
-    = post.user.email
+#posts
+  - @posts.each do |post|
+    .post
+      %h2= link_to post.title, post
+      %p
+        Publish at
+        = time_ago_in_words(post.created_at)
+        by
+        = post.user.email
