@@ -14,8 +14,29 @@
  *= require_self
  */
 
+body{
+  font-family: 'Lato', sans-serif;
+}
+
 .wrapper{
   width: 60%;
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.main_header{
+  width: 80%;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  #logo{
+    float:left;
+    p{
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: -1px;
+      font: 1.2rem;
+    }
+  }
+
 }
