@@ -16,6 +16,7 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  background: #EDEFF0;
 }
 
 .wrapper{
@@ -25,9 +26,9 @@ body{
 }
 
 .main_header{
-  width: 80%;
-  max-width: 1140px;
+  width: 100%;
   margin: 0 auto;
+  background: White;
 
   #logo{
     float:left;
@@ -39,4 +40,17 @@ body{
     }
   }
 
+  #buttons{
+    float: right;
+  }
+
+}
+
+.clearfix:before, .clearfix:after{
+  content: " ";
+  display: table;
+}
+
+.clearfix:after{
+  clear: both;
 }
