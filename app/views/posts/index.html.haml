@@ -1,8 +1,8 @@
 #posts
   - @posts.each do |post|
     .post
-      %h2= link_to post.title, post
-      %p
+      %h2.title= link_to post.title, post
+      %p.date
         Publish at
         = time_ago_in_words(post.created_at)
         by
